@@ -1,154 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="lofi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aequilum | L'art de vivre</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aequilum | L'art de vivre</title>
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+    <body
+        class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]"
+    >
+        <div class="film-grain"></div>
 
-    <div class="film-grain"></div>
+        <nav
+            class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down"
+        >
+            <a
+                href="index.html"
+                class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow"
+                >Aequilum</a
+            >
 
-    <nav class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down">
-        <a href="#" class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow">Aequilum</a>
-        
-        <div class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase">
-            <a href="index.html" class="nav-item cursor-pointer text-white border-b border-white pb-1">L'Accueil</a>
-            <a href="archives.html" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">Les Archives</a>
-            <a href="#intellect" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">L'Intellect</a>
-            <a href="#elegance" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">L'Élégance</a>
-        </div>
-    </nav>
+            <div
+                class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase"
+            >
+                <a
+                    href="index.html"
+                    class="nav-item cursor-pointer text-white border-b border-white pb-1"
+                    >L'Accueil</a
+                >
 
-    <header class="min-h-screen flex flex-col justify-center items-center px-6 relative overflow-hidden py-32">
-        <div class="text-center z-10 max-w-4xl mx-auto">
-            <p class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500 reveal-text delay-1">
-                Manifeste Personnel
+                <a
+                    href="archives.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >Les Archives</a
+                >
+
+                <a
+                    href="galerie.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >La Galerie</a
+                >
+
+                <a
+                    href="contact.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >Contact</a
+                >
+            </div>
+        </nav>
+
+        <header
+            class="min-h-screen flex flex-col justify-center items-center px-6 relative overflow-hidden py-32"
+        >
+            <div class="text-center z-10 max-w-4xl mx-auto">
+                <p
+                    class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500 reveal-text delay-1"
+                >
+                    Manifeste Personnel
+                </p>
+
+                <h1
+                    class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-4 pb-6 reveal-text delay-2 hover-float cursor-default"
+                >
+                    Chen <span class="italic text-gray-400">Junde</span>
+                </h1>
+
+                <div class="reveal-text delay-3 space-y-8 px-4 md:px-0 mt-8">
+                    <p
+                        class="font-body text-xl md:text-2xl italic text-gray-800 leading-relaxed max-w-2xl mx-auto"
+                    >
+                        "Je me révolte, donc nous sommes." <br />
+                        <span
+                            class="text-sm md:text-base text-gray-400 not-italic block mt-3 tracking-widest uppercase"
+                        >
+                            (I rebel—therefore we exist. — Albert Camus)
+                        </span>
+                    </p>
+
+                    <p
+                        class="font-body text-lg md:text-xl text-gray-600 leading-loose text-justify md:text-center mt-12"
+                    >
+                        Physically anchored as a student in Guangzhou, yet
+                        intellectually wandering through the
+                        <span class="italic">agora</span> of Ancient Greece and
+                        the bare-metal structures of modern computing. I am an
+                        architect of
+                        <span class="italic text-gray-800">logic</span> and a
+                        deconstructor of
+                        <span class="italic text-gray-800">meaning</span>.
+                    </p>
+                    <p
+                        class="font-body text-lg md:text-xl text-gray-600 leading-loose text-justify md:text-center"
+                    >
+                        Here, the absolute memory safety of Rust meets the
+                        infinite freedom of the conscious ego. Between decoding
+                        the rigorous syntax of Classical Latin, compiling the
+                        core of Arch Linux, and confronting the mechanisms of
+                        the Social Contract, I find my
+                        <span class="italic text-gray-800">tranquillitas</span>
+                        (peace).
+                    </p>
+
+                    <p
+                        class="text-xs md:text-sm font-heading uppercase tracking-[0.4em] mt-16 block text-gray-400 hover-float cursor-default"
+                    >
+                        Aequilum — Welcome to the archives.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <section
+            id="intellect"
+            class="py-32 px-6 md:px-20 max-w-screen-2xl mx-auto border-t border-gray-200 fade-in-up"
+        >
+            <div
+                class="flex flex-col md:flex-row justify-between items-end mb-24"
+            >
+                <h2
+                    class="font-heading text-4xl md:text-5xl max-w-2xl leading-tight"
+                >
+                    L'architecture de <br />
+                    <span class="italic text-gray-400">la pensée</span>.
+                </h2>
+                <p
+                    class="font-body text-gray-500 uppercase tracking-widest text-sm mt-8 md:mt-0"
+                >
+                    Chapitre I — L'Intellect
+                </p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
+                <div class="content-card hover-trigger fade-in-up delay-1">
+                    <span
+                        class="font-heading text-gray-300 text-5xl block mb-4 italic"
+                        >01</span
+                    >
+                    <h3
+                        class="font-heading text-2xl mb-4 tracking-wide uppercase"
+                    >
+                        La Logique & Le Code
+                    </h3>
+                    <p
+                        class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                    >
+                        Forging digital realities. Finding absolute elegance in
+                        the strict memory safety of Rust and the raw power of
+                        C++. Architecting fluid systems via Go and Python, all
+                        elegantly curated within the minimalist bounds of Arch
+                        Linux.
+                    </p>
+                    <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
+                </div>
+                <div
+                    class="content-card hover-trigger fade-in-up delay-2 md:mt-24"
+                >
+                    <span
+                        class="font-heading text-gray-300 text-5xl block mb-4 italic"
+                        >02</span
+                    >
+                    <h3
+                        class="font-heading text-2xl mb-4 tracking-wide uppercase"
+                    >
+                        La Philologie
+                    </h3>
+                    <p
+                        class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                    >
+                        Tracing the ancient roots of human expression. Immersed
+                        in the rigorous grammatical structures of Classical
+                        Latin and Ancient Greek, while simultaneously mastering
+                        the modern nuances of English and exploring the
+                        precision of German.
+                    </p>
+                    <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
+                </div>
+                <div class="content-card hover-trigger fade-in-up delay-3">
+                    <span
+                        class="font-heading text-gray-300 text-5xl block mb-4 italic"
+                        >03</span
+                    >
+                    <h3
+                        class="font-heading text-2xl mb-4 tracking-wide uppercase"
+                    >
+                        Philosophie & Droit
+                    </h3>
+                    <p
+                        class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                    >
+                        Confronting the absurd with Stoic resilience. Analyzing
+                        the intricate dialectics of Hegel and the parameters of
+                        the Social Contract. Deeply engaged in comparative
+                        constitutional law and the historical mechanisms of
+                        governance.
+                    </p>
+                    <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
+                </div>
+                <div
+                    class="content-card hover-trigger fade-in-up delay-4 md:mt-24"
+                >
+                    <span
+                        class="font-heading text-gray-300 text-5xl block mb-4 italic"
+                        >04</span
+                    >
+                    <h3
+                        class="font-heading text-2xl mb-4 tracking-wide uppercase"
+                    >
+                        Les Sciences Pures
+                    </h3>
+                    <p
+                        class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                    >
+                        Seeking the fundamental truths of the universe.
+                        Exploring the elegant equations of advanced mathematics,
+                        the profound mysteries of physics, and the elemental
+                        interactions within chemistry.
+                    </p>
+                    <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
+                </div>
+            </div>
+        </section>
+
+        <section
+            id="elegance"
+            class="py-32 px-6 md:px-20 max-w-screen-2xl mx-auto border-t border-gray-200 fade-in-up"
+        >
+            <div
+                class="flex flex-col md:flex-row justify-between items-end mb-24"
+            >
+                <h2
+                    class="font-heading text-4xl md:text-5xl max-w-2xl leading-tight"
+                >
+                    Le rythme de <br />
+                    <span class="italic text-gray-400">l'existence</span>.
+                </h2>
+                <p
+                    class="font-body text-gray-500 uppercase tracking-widest text-sm mt-8 md:mt-0"
+                >
+                    Chapitre II — L'Élégance
+                </p>
+            </div>
+            <div class="flex flex-col gap-32">
+                <div
+                    class="flex flex-col md:flex-row gap-10 items-center hover-trigger fade-in-up delay-1"
+                >
+                    <div class="md:w-1/3">
+                        <span
+                            class="font-heading text-gray-300 text-4xl block mb-2 italic"
+                            >I</span
+                        >
+                        <h3
+                            class="font-heading text-2xl tracking-wide uppercase"
+                        >
+                            L'Aéronautique
+                        </h3>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p
+                            class="font-body text-xl text-gray-600 leading-relaxed"
+                        >
+                            Fascinated by the intersection of supreme
+                            engineering and luxury in the skies. A quiet admirer
+                            of the aerodynamic perfection and refined interiors
+                            of modern business jets, such as the Bombardier
+                            Challenger 3500.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand mt-6"
+                        ></div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row-reverse gap-10 items-center hover-trigger fade-in-up delay-2 text-left md:text-right"
+                >
+                    <div class="md:w-1/3">
+                        <span
+                            class="font-heading text-gray-300 text-4xl block mb-2 italic"
+                            >II</span
+                        >
+                        <h3
+                            class="font-heading text-2xl tracking-wide uppercase"
+                        >
+                            L'Esthétique
+                        </h3>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p
+                            class="font-body text-xl text-gray-600 leading-relaxed"
+                        >
+                            Capturing the ephemeral through the lens of
+                            photography, finding beauty in geometry and light.
+                            Accompanying these moments with the meticulous
+                            ritual of brewing the perfect cup of coffee.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand mt-6 origin-right"
+                        ></div>
+                    </div>
+                </div>
+                <div
+                    class="flex flex-col md:flex-row gap-10 items-center hover-trigger fade-in-up delay-3"
+                >
+                    <div class="md:w-1/3">
+                        <span
+                            class="font-heading text-gray-300 text-4xl block mb-2 italic"
+                            >III</span
+                        >
+                        <h3
+                            class="font-heading text-2xl tracking-wide uppercase"
+                        >
+                            La Vitalité
+                        </h3>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p
+                            class="font-body text-xl text-gray-600 leading-relaxed"
+                        >
+                            Maintaining the physical vessel to support the
+                            intellect. Dedicated to the endurance of running and
+                            the agility of badminton, rigorously tracking
+                            metrics like VO2 Max to push the boundaries of human
+                            performance.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand mt-6"
+                        ></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer
+            class="py-24 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-1 relative overflow-hidden"
+        >
+            <a
+                href="#"
+                class="font-heading text-5xl md:text-7xl tracking-widest uppercase mb-8 hover-float cursor-pointer text-gray-800"
+                >Aequilum</a
+            >
+            <p
+                class="font-body text-sm tracking-[0.3em] text-gray-400 uppercase"
+            >
+                © 2026 — Ad astra per aspera
             </p>
-            
-            <h1 class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-4 pb-6 reveal-text delay-2 hover-float cursor-default">
-                Chen <span class="italic text-gray-400">Junde</span>
-            </h1>
-            
-            <div class="reveal-text delay-3 space-y-8 px-4 md:px-0 mt-8">
-                <p class="font-body text-xl md:text-2xl italic text-gray-800 leading-relaxed max-w-2xl mx-auto">
-                    "Je me révolte, donc nous sommes." <br>
-                    <span class="text-sm md:text-base text-gray-400 not-italic block mt-3 tracking-widest uppercase">
-                        (I rebel—therefore we exist. — Albert Camus)
-                    </span>
-                </p>
-
-                <p class="font-body text-lg md:text-xl text-gray-600 leading-loose text-justify md:text-center mt-12">
-                    Physically anchored as a student in Guangzhou, yet intellectually wandering through the <span class="italic">agora</span> of Ancient Greece and the bare-metal structures of modern computing. I am an architect of <span class="italic text-gray-800">logic</span> and a deconstructor of <span class="italic text-gray-800">meaning</span>.
-                </p>
-                <p class="font-body text-lg md:text-xl text-gray-600 leading-loose text-justify md:text-center">
-                    Here, the absolute memory safety of Rust meets the infinite freedom of the conscious ego. Between decoding the rigorous syntax of Classical Latin, compiling the core of Arch Linux, and confronting the mechanisms of the Social Contract, I find my <span class="italic text-gray-800">tranquillitas</span> (peace). 
-                </p>
-
-                <p class="text-xs md:text-sm font-heading uppercase tracking-[0.4em] mt-16 block text-gray-400 hover-float cursor-default">
-                    Aequilum — Welcome to the archives.
-                </p>
-            </div>
-        </div>
-    </header>
-
-    <section id="intellect" class="py-32 px-6 md:px-20 max-w-screen-2xl mx-auto border-t border-gray-200 fade-in-up">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-24">
-            <h2 class="font-heading text-4xl md:text-5xl max-w-2xl leading-tight">
-                L'architecture de <br> <span class="italic text-gray-400">la pensée</span>.
-            </h2>
-            <p class="font-body text-gray-500 uppercase tracking-widest text-sm mt-8 md:mt-0">Chapitre I — L'Intellect</p>
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-20">
-            <div class="content-card hover-trigger fade-in-up delay-1">
-                <span class="font-heading text-gray-300 text-5xl block mb-4 italic">01</span>
-                <h3 class="font-heading text-2xl mb-4 tracking-wide uppercase">La Logique & Le Code</h3>
-                <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                    Forging digital realities. Finding absolute elegance in the strict memory safety of Rust and the raw power of C++. Architecting fluid systems via Go and Python, all elegantly curated within the minimalist bounds of Arch Linux.
-                </p>
-                <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
-            </div>
-            <div class="content-card hover-trigger fade-in-up delay-2 md:mt-24">
-                <span class="font-heading text-gray-300 text-5xl block mb-4 italic">02</span>
-                <h3 class="font-heading text-2xl mb-4 tracking-wide uppercase">La Philologie</h3>
-                <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                    Tracing the ancient roots of human expression. Immersed in the rigorous grammatical structures of Classical Latin and Ancient Greek, while simultaneously mastering the modern nuances of English and exploring the precision of German.
-                </p>
-                <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
-            </div>
-            <div class="content-card hover-trigger fade-in-up delay-3">
-                <span class="font-heading text-gray-300 text-5xl block mb-4 italic">03</span>
-                <h3 class="font-heading text-2xl mb-4 tracking-wide uppercase">Philosophie & Droit</h3>
-                <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                    Confronting the absurd with Stoic resilience. Analyzing the intricate dialectics of Hegel and the parameters of the Social Contract. Deeply engaged in comparative constitutional law and the historical mechanisms of governance.
-                </p>
-                <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
-            </div>
-            <div class="content-card hover-trigger fade-in-up delay-4 md:mt-24">
-                <span class="font-heading text-gray-300 text-5xl block mb-4 italic">04</span>
-                <h3 class="font-heading text-2xl mb-4 tracking-wide uppercase">Les Sciences Pures</h3>
-                <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                    Seeking the fundamental truths of the universe. Exploring the elegant equations of advanced mathematics, the profound mysteries of physics, and the elemental interactions within chemistry.
-                </p>
-                <div class="h-[1px] w-full bg-gray-200 line-expand"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="elegance" class="py-32 px-6 md:px-20 max-w-screen-2xl mx-auto border-t border-gray-200 fade-in-up">
-        <div class="flex flex-col md:flex-row justify-between items-end mb-24">
-            <h2 class="font-heading text-4xl md:text-5xl max-w-2xl leading-tight">
-                Le rythme de <br> <span class="italic text-gray-400">l'existence</span>.
-            </h2>
-            <p class="font-body text-gray-500 uppercase tracking-widest text-sm mt-8 md:mt-0">Chapitre II — L'Élégance</p>
-        </div>
-        <div class="flex flex-col gap-32">
-            <div class="flex flex-col md:flex-row gap-10 items-center hover-trigger fade-in-up delay-1">
-                <div class="md:w-1/3">
-                    <span class="font-heading text-gray-300 text-4xl block mb-2 italic">I</span>
-                    <h3 class="font-heading text-2xl tracking-wide uppercase">L'Aéronautique</h3>
-                </div>
-                <div class="md:w-2/3">
-                    <p class="font-body text-xl text-gray-600 leading-relaxed">
-                        Fascinated by the intersection of supreme engineering and luxury in the skies. A quiet admirer of the aerodynamic perfection and refined interiors of modern business jets, such as the Bombardier Challenger 3500.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand mt-6"></div>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row-reverse gap-10 items-center hover-trigger fade-in-up delay-2 text-left md:text-right">
-                <div class="md:w-1/3">
-                    <span class="font-heading text-gray-300 text-4xl block mb-2 italic">II</span>
-                    <h3 class="font-heading text-2xl tracking-wide uppercase">L'Esthétique</h3>
-                </div>
-                <div class="md:w-2/3">
-                    <p class="font-body text-xl text-gray-600 leading-relaxed">
-                        Capturing the ephemeral through the lens of photography, finding beauty in geometry and light. Accompanying these moments with the meticulous ritual of brewing the perfect cup of coffee.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand mt-6 origin-right"></div>
-                </div>
-            </div>
-            <div class="flex flex-col md:flex-row gap-10 items-center hover-trigger fade-in-up delay-3">
-                <div class="md:w-1/3">
-                    <span class="font-heading text-gray-300 text-4xl block mb-2 italic">III</span>
-                    <h3 class="font-heading text-2xl tracking-wide uppercase">La Vitalité</h3>
-                </div>
-                <div class="md:w-2/3">
-                    <p class="font-body text-xl text-gray-600 leading-relaxed">
-                        Maintaining the physical vessel to support the intellect. Dedicated to the endurance of running and the agility of badminton, rigorously tracking metrics like VO2 Max to push the boundaries of human performance.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand mt-6"></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-24 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-1 relative overflow-hidden">
-        <a href="#" class="font-heading text-5xl md:text-7xl tracking-widest uppercase mb-8 hover-float cursor-pointer text-gray-800">Aequilum</a>
-        <p class="font-body text-sm tracking-[0.3em] text-gray-400 uppercase">
-            © 2026 — Ad astra per aspera
-        </p>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>

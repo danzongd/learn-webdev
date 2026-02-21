@@ -1,164 +1,337 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="lofi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aequilum | Les Archives</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aequilum | Les Archives</title>
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+    <body
+        class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]"
+    >
+        <div class="film-grain"></div>
 
-    <div class="film-grain"></div>
+        <nav
+            class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down"
+        >
+            <a
+                href="index.html"
+                class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow"
+                >Aequilum</a
+            >
 
-    <nav class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down">
-        <a href="index.html" class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow">Aequilum</a>
-        <div class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase">
-            <a href="index.html" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">L'Accueil</a>
-            <a href="archives.html" class="nav-item cursor-pointer text-white border-b border-white pb-1">Les Archives</a>
-            <a href="contact.html" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">Contact</a>
-        </div>
-    </nav>
+            <div
+                class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase"
+            >
+                <a
+                    href="index.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >L'Accueil</a
+                >
 
-    <header class="pt-48 pb-20 px-6 flex flex-col items-center relative">
-        <div class="text-center z-10 max-w-4xl mx-auto reveal-text delay-1">
-            <p class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500">
-                Le Registre de Lecture
+                <a
+                    href="archives.html"
+                    class="nav-item cursor-pointer text-white border-b border-white pb-1"
+                    >Les Archives</a
+                >
+
+                <a
+                    href="galerie.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >La Galerie</a
+                >
+
+                <a
+                    href="contact.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >Contact</a
+                >
+            </div>
+        </nav>
+
+        <header class="pt-48 pb-20 px-6 flex flex-col items-center relative">
+            <div class="text-center z-10 max-w-4xl mx-auto reveal-text delay-1">
+                <p
+                    class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500"
+                >
+                    Le Registre de Lecture
+                </p>
+                <h1
+                    class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-10 pb-6 hover-float cursor-default"
+                >
+                    Les <span class="italic text-gray-400">Archives</span>
+                </h1>
+
+                <p
+                    class="font-body text-xl italic text-gray-600 max-w-xl mx-auto leading-relaxed mt-4"
+                >
+                    "Scripta manent." <br />
+                    <span
+                        class="text-xs not-italic uppercase tracking-[0.3em] mt-4 block text-gray-400"
+                    >
+                        Chronicles of laws, languages, and pure equations.
+                    </span>
+                </p>
+            </div>
+        </header>
+
+        <main
+            class="py-20 px-6 md:px-20 max-w-screen-xl mx-auto fade-in-up delay-3"
+        >
+            <section class="mb-32">
+                <div
+                    class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6"
+                >
+                    <span class="font-heading text-gray-300 text-4xl italic"
+                        >I.</span
+                    >
+                    <h2
+                        class="font-heading text-3xl tracking-wider uppercase text-gray-800"
+                    >
+                        Droit & Philosophie Politique
+                    </h2>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        Réflexion (Reflection)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Du contrat social <br /><span
+                                class="text-xl italic text-gray-500"
+                                >ou Principes du droit politique</span
+                            >
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Navigating Jean-Jacques Rousseau's foundational text
+                            on legitimacy. A profound exploration of the
+                            "general will" and the eternal paradox of being
+                            "forced to be free" within a civil society.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        Terminé (Completed)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Constitutional Texts:
+                            <span class="italic text-gray-500"
+                                >NZ, CAN & USA</span
+                            >
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Deconstructing the mechanisms of human rights across
+                            different democratic frameworks. From the absolute
+                            boundaries of the U.S. Constitution to the
+                            legislative supremacy of New Zealand.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-32">
+                <div
+                    class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6"
+                >
+                    <span class="font-heading text-gray-300 text-4xl italic"
+                        >II.</span
+                    >
+                    <h2
+                        class="font-heading text-3xl tracking-wider uppercase text-gray-800"
+                    >
+                        Philologie & Linguistique
+                    </h2>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        Étude quotidienne (Daily Study)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Word Power Made Easy
+                            <span class="italic text-gray-500"
+                                >— Norman Lewis</span
+                            >
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Systematically dismantling English vocabulary
+                            through its Latin and Greek etymologies. A rigorous
+                            practice to master advanced linguistic expression.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        En cours (In Progress)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            L'Allemand & Le Français
+                            <span class="italic text-gray-500"
+                                >(German & French)</span
+                            >
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Expanding the modern language matrix. Building a
+                            solid structural understanding of German grammar,
+                            while simultaneously cultivating an aesthetic
+                            appreciation for French phonology.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mb-32">
+                <div
+                    class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6"
+                >
+                    <span class="font-heading text-gray-300 text-4xl italic"
+                        >III.</span
+                    >
+                    <h2
+                        class="font-heading text-3xl tracking-wider uppercase text-gray-800"
+                    >
+                        Les Sciences Pures
+                    </h2>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        Fondation (Foundation)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Thomas' Calculus
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            The absolute bedrock of higher mathematics.
+                            Mastering limits, derivatives, and integrals to
+                            mathematically perceive the continuous change of the
+                            physical universe.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        En cours (In Progress)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Chemistry:
+                            <span class="italic text-gray-500"
+                                >The Central Science</span
+                            >
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Bridging the gap between pure physics and biological
+                            systems. A comprehensive investigation into matter,
+                            atomic structure, and chemical thermodynamics.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+
+                <div
+                    class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16"
+                >
+                    <div
+                        class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2"
+                    >
+                        Exploration avancée (Advanced)
+                    </div>
+                    <div class="md:col-span-8">
+                        <h3 class="font-heading text-2xl mb-3">
+                            Organic & Physical Chemistry
+                        </h3>
+                        <p
+                            class="font-body text-lg text-gray-600 leading-relaxed mb-6"
+                        >
+                            Venturing deep into the complex molecular
+                            architectures of carbon compounds, alongside
+                            decoding the quantum mechanical principles governing
+                            physical chemistry.
+                        </p>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                        ></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer
+            class="py-20 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-2 relative overflow-hidden"
+        >
+            <a
+                href="index.html"
+                class="font-heading text-4xl tracking-widest uppercase mb-6 hover-float cursor-pointer text-gray-800"
+                >Aequilum</a
+            >
+            <p
+                class="font-body text-sm tracking-[0.2em] text-gray-400 uppercase"
+            >
+                © 2026 — L'esprit ne meurt jamais
             </p>
-            <h1 class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-10 pb-6 hover-float cursor-default">
-                Les <span class="italic text-gray-400">Archives</span>
-            </h1>
-            
-            <p class="font-body text-xl italic text-gray-600 max-w-xl mx-auto leading-relaxed mt-4">
-                "Scripta manent." <br>
-                <span class="text-xs not-italic uppercase tracking-[0.3em] mt-4 block text-gray-400">
-                    Chronicles of laws, languages, and pure equations.
-                </span>
-            </p>
-        </div>
-    </header>
-
-    <main class="py-20 px-6 md:px-20 max-w-screen-xl mx-auto fade-in-up delay-3">
-        
-        <section class="mb-32">
-            <div class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6">
-                <span class="font-heading text-gray-300 text-4xl italic">I.</span>
-                <h2 class="font-heading text-3xl tracking-wider uppercase text-gray-800">Droit & Philosophie Politique</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    Réflexion (Reflection)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Du contrat social <br><span class="text-xl italic text-gray-500">ou Principes du droit politique</span></h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Navigating Jean-Jacques Rousseau's foundational text on legitimacy. A profound exploration of the "general will" and the eternal paradox of being "forced to be free" within a civil society.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    Terminé (Completed)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Constitutional Texts: <span class="italic text-gray-500">NZ, CAN & USA</span></h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Deconstructing the mechanisms of human rights across different democratic frameworks. From the absolute boundaries of the U.S. Constitution to the legislative supremacy of New Zealand.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-32">
-            <div class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6">
-                <span class="font-heading text-gray-300 text-4xl italic">II.</span>
-                <h2 class="font-heading text-3xl tracking-wider uppercase text-gray-800">Philologie & Linguistique</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    Étude quotidienne (Daily Study)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Word Power Made Easy <span class="italic text-gray-500">— Norman Lewis</span></h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Systematically dismantling English vocabulary through its Latin and Greek etymologies. A rigorous practice to master advanced linguistic expression.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    En cours (In Progress)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">L'Allemand & Le Français <span class="italic text-gray-500">(German & French)</span></h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Expanding the modern language matrix. Building a solid structural understanding of German grammar, while simultaneously cultivating an aesthetic appreciation for French phonology.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-32">
-            <div class="flex items-center gap-6 mb-16 border-b border-gray-200 pb-6">
-                <span class="font-heading text-gray-300 text-4xl italic">III.</span>
-                <h2 class="font-heading text-3xl tracking-wider uppercase text-gray-800">Les Sciences Pures</h2>
-            </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    Fondation (Foundation)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Thomas' Calculus</h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        The absolute bedrock of higher mathematics. Mastering limits, derivatives, and integrals to mathematically perceive the continuous change of the physical universe.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    En cours (In Progress)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Chemistry: <span class="italic text-gray-500">The Central Science</span></h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Bridging the gap between pure physics and biological systems. A comprehensive investigation into matter, atomic structure, and chemical thermodynamics.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-16 hover-trigger mt-16">
-                <div class="md:col-span-4 font-body text-sm tracking-widest text-gray-400 uppercase pt-2">
-                    Exploration avancée (Advanced)
-                </div>
-                <div class="md:col-span-8">
-                    <h3 class="font-heading text-2xl mb-3">Organic & Physical Chemistry</h3>
-                    <p class="font-body text-lg text-gray-600 leading-relaxed mb-6">
-                        Venturing deep into the complex molecular architectures of carbon compounds, alongside decoding the quantum mechanical principles governing physical chemistry.
-                    </p>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="py-20 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-2 relative overflow-hidden">
-        <a href="index.html" class="font-heading text-4xl tracking-widest uppercase mb-6 hover-float cursor-pointer text-gray-800">Aequilum</a>
-        <p class="font-body text-sm tracking-[0.2em] text-gray-400 uppercase">
-            © 2026 — L'esprit ne meurt jamais
-        </p>
-    </footer>
-
-</body>
+        </footer>
+    </body>
 </html>

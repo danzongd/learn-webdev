@@ -1,121 +1,233 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr" data-theme="lofi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aequilum | Correspondance</title>
-    <link rel="stylesheet" href="src/style.css">
-</head>
-<body class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aequilum | Correspondance</title>
+        <link rel="stylesheet" href="src/style.css" />
+    </head>
+    <body
+        class="bg-[#fcfbf9] text-[#1a1a1a] antialiased selection:bg-[#1a1a1a] selection:text-[#fcfbf9]"
+    >
+        <div class="film-grain"></div>
 
-    <div class="film-grain"></div>
+        <nav
+            class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down"
+        >
+            <a
+                href="index.html"
+                class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow"
+                >Aequilum</a
+            >
 
-    <nav class="fixed w-full top-0 z-50 px-10 py-8 flex justify-between items-center mix-blend-difference text-white fade-in-down">
-        <a href="index.html" class="font-heading text-2xl tracking-[0.3em] uppercase cursor-pointer breathe-slow">Aequilum</a>
-        <div class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase">
-            <a href="index.html" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">L'Accueil</a>
-            <a href="archives.html" class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors">Les Archives</a>
-            <a href="contact.html" class="nav-item cursor-pointer text-white border-b border-white pb-1">Contact</a>
-        </div>
-    </nav>
+            <div
+                class="hidden md:flex gap-12 font-body text-sm tracking-widest uppercase"
+            >
+                <a
+                    href="index.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >L'Accueil</a
+                >
 
-    <header class="pt-48 pb-20 px-6 flex flex-col items-center relative">
-        <div class="text-center z-10 max-w-4xl mx-auto reveal-text delay-1">
-            <p class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500">
-                La Correspondance
-            </p>
-            <h1 class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-10 pb-6 hover-float cursor-default">
-                <span class="italic text-gray-400">Reach</span> Out
-            </h1>
-            
-            <p class="font-body text-xl italic text-gray-600 max-w-xl mx-auto leading-relaxed mt-4">
-                "Words are the pale shadows of forgotten names." <br>
-                <span class="text-xs not-italic uppercase tracking-[0.3em] mt-4 block text-gray-400">
-                    Initiate a dialogue across the digital void.
-                </span>
-            </p>
-        </div>
-    </header>
+                <a
+                    href="archives.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >Les Archives</a
+                >
 
-    <main class="py-20 px-6 md:px-20 max-w-screen-xl mx-auto fade-in-up delay-3">
-        
-        <div class="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-x-20">
-            
-            <div class="md:col-span-5 hover-trigger">
-                <span class="font-heading text-gray-300 text-4xl block mb-6 italic">Connexion</span>
-                <p class="font-body text-xl text-gray-600 leading-loose mb-10 text-justify">
-                    Whether it is a rigorous debate on comparative constitutional law, a shared appreciation for the absolute memory safety of Rust, or simply an exchange of aesthetic perspectives over a virtual cup of finely brewed coffee—my lines of communication remain eternally open.
+                <a
+                    href="galerie.html"
+                    class="nav-item cursor-pointer text-gray-400 hover:text-white transition-colors"
+                    >La Galerie</a
+                >
+
+                <a
+                    href="contact.html"
+                    class="nav-item cursor-pointer text-white border-b border-white pb-1"
+                    >Contact</a
+                >
+            </div>
+        </nav>
+
+        <header class="pt-48 pb-20 px-6 flex flex-col items-center relative">
+            <div class="text-center z-10 max-w-4xl mx-auto reveal-text delay-1">
+                <p
+                    class="font-body text-sm md:text-base tracking-[0.4em] uppercase mb-6 text-gray-500"
+                >
+                    La Correspondance
                 </p>
-                <div class="h-[1px] w-full bg-gray-200 line-expand origin-left"></div>
+                <h1
+                    class="font-heading text-6xl md:text-8xl font-normal tracking-wide leading-none mb-10 pb-6 hover-float cursor-default"
+                >
+                    <span class="italic text-gray-400">Reach</span> Out
+                </h1>
+
+                <p
+                    class="font-body text-xl italic text-gray-600 max-w-xl mx-auto leading-relaxed mt-4"
+                >
+                    "Words are the pale shadows of forgotten names." <br />
+                    <span
+                        class="text-xs not-italic uppercase tracking-[0.3em] mt-4 block text-gray-400"
+                    >
+                        Initiate a dialogue across the digital void.
+                    </span>
+                </p>
             </div>
+        </header>
 
-            <div class="md:col-span-6 md:col-start-7 flex flex-col gap-16">
-                
-                <div class="hover-trigger">
-                    <p class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6">L'Essentiel (Direct)</p>
-                    
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">Email</span>
-                        <a href="mailto:danzongd1024@gmail.com" class="font-body text-xl text-gray-500 hover:text-gray-900 transition-colors italic">danzongd1024@gmail.com</a>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"></div>
-
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">Phone</span>
-                        <a href="tel:+8613922481815" class="font-body text-xl text-gray-500 hover:text-gray-900 transition-colors italic">+86 139 2248 1815</a>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right"></div>
+        <main
+            class="py-20 px-6 md:px-20 max-w-screen-xl mx-auto fade-in-up delay-3"
+        >
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-y-20 md:gap-x-20">
+                <div class="md:col-span-5 hover-trigger">
+                    <span
+                        class="font-heading text-gray-300 text-4xl block mb-6 italic"
+                        >Connexion</span
+                    >
+                    <p
+                        class="font-body text-xl text-gray-600 leading-loose mb-10 text-justify"
+                    >
+                        Whether it is a rigorous debate on comparative
+                        constitutional law, a shared appreciation for the
+                        absolute memory safety of Rust, or simply an exchange of
+                        aesthetic perspectives over a virtual cup of finely
+                        brewed coffee—my lines of communication remain eternally
+                        open.
+                    </p>
+                    <div
+                        class="h-[1px] w-full bg-gray-200 line-expand origin-left"
+                    ></div>
                 </div>
 
-                <div class="hover-trigger">
-                    <p class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6">Le Réseau (Social)</p>
-                    
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">X (Twitter)</span>
-                        <span class="font-body text-xl text-gray-500 italic">@danzongd</span>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"></div>
+                <div class="md:col-span-6 md:col-start-7 flex flex-col gap-16">
+                    <div class="hover-trigger">
+                        <p
+                            class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6"
+                        >
+                            L'Essentiel (Direct)
+                        </p>
 
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">Instagram & Threads</span>
-                        <span class="font-body text-xl text-gray-500 italic">Aequilum</span>
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >Email</span
+                            >
+                            <a
+                                href="mailto:danzongd1024@gmail.com"
+                                class="font-body text-xl text-gray-500 hover:text-gray-900 transition-colors italic"
+                                >danzongd1024@gmail.com</a
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"
+                        ></div>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >Phone</span
+                            >
+                            <a
+                                href="tel:+8613922481815"
+                                class="font-body text-xl text-gray-500 hover:text-gray-900 transition-colors italic"
+                                >+86 139 2248 1815</a
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right"
+                        ></div>
                     </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right"></div>
+
+                    <div class="hover-trigger">
+                        <p
+                            class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6"
+                        >
+                            Le Réseau (Social)
+                        </p>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >X (Twitter)</span
+                            >
+                            <span class="font-body text-xl text-gray-500 italic"
+                                >@danzongd</span
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"
+                        ></div>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >Instagram & Threads</span
+                            >
+                            <span class="font-body text-xl text-gray-500 italic"
+                                >Aequilum</span
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right"
+                        ></div>
+                    </div>
+
+                    <div class="hover-trigger">
+                        <p
+                            class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6"
+                        >
+                            Le Code & Divers (Various)
+                        </p>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >GitHub</span
+                            >
+                            <span class="font-body text-xl text-gray-500 italic"
+                                >danzongd</span
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"
+                        ></div>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >WeChat</span
+                            >
+                            <span class="font-body text-xl text-gray-500 italic"
+                                >Aequilum</span
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"
+                        ></div>
+
+                        <div class="flex justify-between items-end mb-4">
+                            <span class="font-heading text-2xl text-gray-800"
+                                >TikTok (China)</span
+                            >
+                            <span class="font-body text-xl text-gray-500 italic"
+                                >hrbslam</span
+                            >
+                        </div>
+                        <div
+                            class="h-[1px] w-full bg-gray-200 line-expand origin-right"
+                        ></div>
+                    </div>
                 </div>
-
-                <div class="hover-trigger">
-                    <p class="font-body text-sm tracking-widest text-gray-400 uppercase mb-6">Le Code & Divers (Various)</p>
-                    
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">GitHub</span>
-                        <span class="font-body text-xl text-gray-500 italic">danzongd</span>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"></div>
-
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">WeChat</span>
-                        <span class="font-body text-xl text-gray-500 italic">Aequilum</span>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right mb-6"></div>
-
-                    <div class="flex justify-between items-end mb-4">
-                        <span class="font-heading text-2xl text-gray-800">TikTok (China)</span>
-                        <span class="font-body text-xl text-gray-500 italic">hrbslam</span>
-                    </div>
-                    <div class="h-[1px] w-full bg-gray-200 line-expand origin-right"></div>
-                </div>
-
             </div>
-        </div>
+        </main>
 
-    </main>
-
-    <footer class="py-20 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-4 relative overflow-hidden mt-20">
-        <a href="index.html" class="font-heading text-4xl tracking-widest uppercase mb-6 hover-float cursor-pointer text-gray-800">Aequilum</a>
-        <p class="font-body text-sm tracking-[0.2em] text-gray-400 uppercase">
-            © 2026 — L'esprit ne meurt jamais
-        </p>
-    </footer>
-
-</body>
+        <footer
+            class="py-20 flex flex-col items-center justify-center border-t border-gray-200 fade-in-up delay-4 relative overflow-hidden mt-20"
+        >
+            <a
+                href="index.html"
+                class="font-heading text-4xl tracking-widest uppercase mb-6 hover-float cursor-pointer text-gray-800"
+                >Aequilum</a
+            >
+            <p
+                class="font-body text-sm tracking-[0.2em] text-gray-400 uppercase"
+            >
+                © 2026 — L'esprit ne meurt jamais
+            </p>
+        </footer>
+    </body>
 </html>
